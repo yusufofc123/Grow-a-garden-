@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iky Store</title>
+    <style>
+        /* Body & Background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            color: #333;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(90deg, #0061ff, #60efff);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .header-content img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Container Produk */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        .product-content {
+            padding: 20px;
+        }
+        .product h2 {
+            margin: 0 0 10px;
+            font-size: 1.4rem;
+            color: #0061ff;
+        }
+        .product p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #25D366;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+        .btn-whatsapp:hover {
+            background: #1ebe5d;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <img src="https://files.catbox.moe/x00w7t.jpg" alt="Logo Website">
+        <div>Produk Iky Store</div>
+    </div>
+</header>
+
+<!-- Konten Produk -->
+<div class="container">
+    <div class="product-list">
+        <div class="product">
+            <img src="https://files.catbox.moe/vs7p53.jpg" alt="Produk A">
+            <div class="product-content">
+                <h2>Uang Grow A Garden 250T</h2>
+                <p>Jika uang kalian grow a garden sangat sedikit dan produk ini sangat membantu untuk menambahkan uang kalian untuk event/update</p>
+                <div class="price">Rp 1.000</div>
+                <a href="https://wa.me/6283139882434?text=Permisi%2C%20saya%20ingin%20membeli%20uang%20250T%20apakah%20masih%20ada%20untuk%20produknya" class="btn-whatsapp">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://files.catbox.moe/vs7p53.jpg" alt="Produk B">
+            <div class="product-content">
+                <h2>Uang Grow A Garden 500T</h2>
+                <p>Jika uang kalian grow a garden sangat sedikit dan produk ini sangat membantu untuk menambahkan uang kalian untuk event/update</p>
+                <div class="price">Rp 2.000</div>
+                <a href="https://wa.me/6283139882434?text=Permisi%2C%20saya%20ingin%20membeli%20uang%20500T%20apakah%20masih%20ada%20untuk%20produknya" class="btn-whatsapp">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://files.catbox.moe/vs7p53.jpg" alt="Produk C">
+            <div class="product-content">
+                <h2>Uang Grow A Garden 750T</h2>
+                <p>Jika uang kalian grow a garden sangat sedikit dan produk ini sangat membantu untuk menambahkan uang kalian untuk event/update</p>
+                <div class="price">Rp 3.000</div>
+                <a href="https://wa.me/6283139882434?text=Permisi%2C%20saya%20ingin%20membeli%20uang%20750T%20apakah%20masih%20ada%20untuk%20produknya" class="btn-whatsapp">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://files.catbox.moe/vs7p53.jpg" alt="Produk D">
+            <div class="product-content">
+                <h2>Uang Grow A Garden 1,5Q</h2>
+                <p>Jika uang kalian grow a garden sangat sedikit dan produk ini sangat membantu untuk menambahkan uang kalian untuk event/update</p>
+                <div class="price">Rp 4.000</div>
+                <a href="https://wa.me/6283139882434?text=Permisi%2C%20saya%20ingin%20membeli%20uang%201,5Q%20apakah%20masih%20ada%20untuk%20produknya" class="btn-whatsapp">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://files.catbox.moe/vs7p53.jpg" alt="Produk E">
+            <div class="product-content">
+                <h2>Uang Grow A Garden 2Q</h2>
+                <p>Jika uang kalian grow a garden sangat sedikit dan produk ini sangat membantu untuk menambahkan uang kalian untuk event/update</p>
+                <div class="price">Rp 5.000</div>
+                <a href="https://wa.me/6283139882434?text=Permisi%2C%20saya%20ingin%20membeli%20uang%202Q%20apakah%20masih%20ada%20untuk%20produknya" class="btn-whatsapp">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Hilangkan loading setelah halaman siap
+    window.addEventListener("load", function() {
+        document.getElementById("loading").classList.add("hidden");
+    });
+</script>
+
+</body>
+</html>
